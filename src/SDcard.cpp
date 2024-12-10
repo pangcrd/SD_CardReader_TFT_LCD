@@ -1,3 +1,11 @@
+/**************************ESP32 TFT Display SD Card Example Code************************
+Version		 :	1.1
+Description	 :	The code is currently available based on the course on YouTube: Elecrow, 
+				if you have any questions, please refer to the course video: Introduction 
+				to ask questions or feedback.
+Mod by Pangcrd        
+******************************************************************************************/
+
 #include "component.h"
 
 /*SD card SPI pin*/
