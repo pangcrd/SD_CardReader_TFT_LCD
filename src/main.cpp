@@ -5,7 +5,7 @@ Description	 :	The code is currently available based on the course on YouTube: E
 				to ask questions or feedback.
 Mod by Pangcrd        
 ******************************************************************************************/
-#include "SDcard.h"
+#include "component.h"
 
 TFT_eSPI tft = TFT_eSPI();
 

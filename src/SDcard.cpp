@@ -1,4 +1,4 @@
-#include "SDcard.h"
+#include "component.h"
 
 /*SD card SPI pin*/
 #define SD_MOSI 12
