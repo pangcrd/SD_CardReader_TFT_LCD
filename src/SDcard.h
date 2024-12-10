@@ -1,5 +1,5 @@
-#ifndef BITMAPDECODE_H
-#define BITMAPDECODE_H
+#ifndef SDCARD_H
+#define SDCARD_H
 
 #include <Arduino.h> 
 #include <SD.h>

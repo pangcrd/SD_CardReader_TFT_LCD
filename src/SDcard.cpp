@@ -1,10 +1,10 @@
-#include "bitmapDecode.h"
+#include "SDcard.h"
 
 /*SD card SPI pin*/
-#define SD_MOSI 23
-#define SD_MISO 2
-#define SD_SCK 15
-#define SD_CS 4
+#define SD_MOSI 12
+#define SD_MISO 14
+#define SD_SCK 27
+#define SD_CS 13
 
 extern TFT_eSPI tft;
 SPIClass SD_SPI;
