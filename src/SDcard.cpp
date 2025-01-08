@@ -9,7 +9,7 @@ Mod by Pangcrd
 #include "component.h"
 
 /*SD card SPI pin*/
-#define SD_MOSI 12
+#define SD_MOSI 4
 #define SD_MISO 14
 #define SD_SCK 27
 #define SD_CS 13
@@ -41,7 +41,7 @@ uint32_t read32(fs::File &f) {
 // SD test
 void listDir(fs::FS & fs, const char *dirname, uint8_t levels)
 {
-  Serial.printf("Listing directory: %s\n", dirname);
+  //Serial.printf("Listing directory: %s\n", dirname);
 
   File root = fs.open(dirname);
   if (!root)
@@ -155,8 +155,8 @@ void drawBmp(fs::FS & fs, const char *filename, int16_t x, int16_t y) {
         tft.pushImage(x, y--, w, 1, (uint16_t*)lineBuffer);
       }
       tft.setSwapBytes(oldSwapBytes);
-      Serial.print("Loaded in "); Serial.print(millis() - startTime);
-      Serial.println(" ms");
+      // Serial.print("Loaded in "); Serial.print(millis() - startTime);
+      // Serial.println(" ms");
     }
     else Serial.println("BMP format not recognized.");
   }
